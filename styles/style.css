@@ -30,7 +30,6 @@ img {
 }
 
 .header {
-  background-color: var(--withe-text);
   padding: 24px 0;
   border-bottom: 1px solid var(--footer-text-color);
 }
@@ -160,6 +159,25 @@ img {
   letter-spacing: 0.04em;
 }
 
+.visually-hidden {
+  position: absolute;
+  top: -150%;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+}
+
 /* ---/HERO  section--- */
 
 /* ---description section---     ---portfolio section---   */
@@ -250,6 +268,9 @@ img {
 
 .team-item {
   background-color: var(--withe-text);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -267,6 +288,7 @@ img {
 
 .wrap-team {
   padding: 32px 0;
+  min-height: 120px;
 }
 
 .team-text,
