@@ -8,6 +8,7 @@
   --adress-text-color: #404bbf;
   --team-bg-color: #f4f4fd;
   --standart-gap: 24px;
+  --portfolio-bg: #e5e5e5;
 }
 
 body {
@@ -25,7 +26,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .header {
@@ -320,9 +321,57 @@ img {
   background-color: var(--withe-text);
 }
 
+.portfolio-filter {
+  margin: 0;
+  /* padding-top: 96px;
+  padding-bottom: 72px; */
+  padding: 96px 0 72px 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--standart-gap);
+}
+
+.portfolio-list {
+  margin: 0;
+  padding: 0 0 120px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: var(--standart-gap); */
+}
+
+.heroes-list {
+  margin: 0 24px 48px 0;
+
+  background-color: var(--withe-text);
+}
+
+.heroes-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.heroes-list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-descr {
+  padding: 32px 0 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
+.portfolio-title {
+  margin-bottom: 8px;
+}
+
+.portfolio-text {
+  text-align: start;
+}
+
 /* Button */
 
 .portfolio-btn {
+  padding: 12px 24px;
   color: var(--accent-color);
   border: 1px solid var(--footer-text-color);
   border-radius: 4px;
