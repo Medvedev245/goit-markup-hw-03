@@ -29,6 +29,8 @@ img {
   /* outline: 1px solid red; */
 }
 
+/* ------header------- */
+
 .header {
   padding: 24px 0;
   border-bottom: 1px solid var(--footer-text-color);
@@ -45,11 +47,6 @@ img {
 
 .decoration {
   text-decoration: none;
-}
-
-/* ---HEADER--- */
-.header {
-  background-color: var(--withe-text);
 }
 
 /* ---NAVIGATION--- */
@@ -148,6 +145,7 @@ img {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  border: none;
 
   color: var(--withe-text);
   font-weight: 500;
@@ -158,6 +156,10 @@ img {
   font-family: inherit;
   letter-spacing: 0.04em;
 }
+
+/* ---/HERO  section--- */
+
+/* ---description section---     ---portfolio section---   */
 
 .visually-hidden {
   position: absolute;
@@ -177,10 +179,6 @@ img {
   outline: none;
   white-space: nowrap;
 }
-
-/* ---/HERO  section--- */
-
-/* ---description section---     ---portfolio section---   */
 
 .description {
   background-color: var(--withe-text);
@@ -254,6 +252,7 @@ img {
 .team {
   background-color: var(--team-bg-color);
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .team-list {
@@ -342,13 +341,15 @@ img {
 
 .portfolio {
   background-color: var(--withe-text);
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-filter {
   margin: 0;
-  /* padding-top: 96px;
-  padding-bottom: 72px; */
-  padding: 96px 0 72px 0;
+
+  /* padding: 96px 0 72px 0; */
+  margin-bottom: 72px;
   padding-left: 0;
   display: flex;
   justify-content: center;
@@ -357,7 +358,7 @@ img {
 
 .portfolio-list {
   margin: 0;
-  padding: 0 0 120px 0;
+  padding: 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -380,7 +381,8 @@ img {
 
 .portfolio-descr {
   padding: 32px 0 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text-color);
+  border-top: none;
 }
 
 .portfolio-title {
